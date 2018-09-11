@@ -99,11 +99,6 @@ body, h1, h2, h3, h4, h5, p, ul, li {
 
 #studies-wrapper {
   background-color: lighten($mainColor, 10);
-  padding-right: 0 !important;
-
-  .ui.grid.container {
-    margin-right: 0 !important;
-  }
 }
 
 #studies {

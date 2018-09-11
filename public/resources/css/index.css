@@ -1,7 +1,7 @@
 body {
   font-family: Roboto;
   color: white;
-  background-color: #496163; }
+  background-color: #181840; }
 
 html {
   overflow: hidden; }
@@ -15,7 +15,7 @@ body, h1, h2, h3, h4, h5, p, ul, li {
   width: 100%;
   position: relative;
   text-align: center;
-  background-color: #334446; }
+  background-color: #0a0a1b; }
   #header #name {
     text-decoration: underline; }
   @media (min-width: 37.5em) {
@@ -59,21 +59,18 @@ body, h1, h2, h3, h4, h5, p, ul, li {
       width: 60%;
       height: 100%;
       float: left;
-      background-color: #5a787a; }
+      background-color: #23235e; }
       @media (min-width: 37.5em) {
         #abilities .ability .ability-box {
           width: 80%; } }
       #abilities .ability .ability-box .inner-box {
         min-width: 5px;
         width: 5px;
-        background-color: #1e2728;
+        background-color: black;
         height: 100%; }
 
 #studies-wrapper {
-  background-color: #5f7e80;
-  padding-right: 0 !important; }
-  #studies-wrapper .ui.grid.container {
-    margin-right: 0 !important; }
+  background-color: #262665; }
 
 #studies {
   padding-top: 25px; }
@@ -89,8 +86,8 @@ body, h1, h2, h3, h4, h5, p, ul, li {
   #studies .study {
     width: 100%;
     margin: 20px 0;
-    border: 3px solid #77989b;
-    background-color: #334446; }
+    border: 3px solid #34348a;
+    background-color: #0a0a1b; }
     @media (min-width: 37.5em) {
       #studies .study {
         width: 45%;
@@ -101,7 +98,7 @@ body, h1, h2, h3, h4, h5, p, ul, li {
         margin: 10px 1.5%; } }
     #studies .study .type {
       text-align: center;
-      background-color: #546f72;
+      background-color: #1f1f53;
       padding: 10px;
       border-radius: 5px 5px 0 0; }
     #studies .study .name {
@@ -115,13 +112,13 @@ body, h1, h2, h3, h4, h5, p, ul, li {
     #studies .study .instance {
       font-size: 15px;
       padding: 10px;
-      background-color: #3e5354; }
+      background-color: #11112d; }
     #studies .study .certificate {
       width: 80%;
       margin: 10px 10%;
-      background-color: #496163;
+      background-color: #181840;
       border-radius: 10px;
-      border: 2px solid #698c8f; }
+      border: 2px solid #2d2d78; }
       #studies .study .certificate .name {
         padding: 15px; }
       #studies .study .certificate .meta {
