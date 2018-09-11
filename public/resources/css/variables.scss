@@ -1,5 +1,6 @@
-$mainColor: red;
-$textColor: white;
+$mainColor: rgb(183, 253, 255);
+$textColor: black;
+$secondaryTextColor: darken($textColor, 50);
 
 @mixin breakpoint($point) {
   @if $point == desktop {

@@ -12,17 +12,78 @@ body, h1, h2, h3, h4, h5, p, ul, li {
 }
 
 #header {
-  height: 35vh;
+  height: 20vh;
   width: 100%;
   position: relative;
   text-align: center;
   background-color: darken($mainColor, 10);
+
+  @include breakpoint(phablet) {
+    height: 35vh;
+  }
+
+  h1 {
+    font-size: 20px;
+    @include breakpoint(phablet) {
+      font-size: 35px;
+    }
+  }
+
+  h2 {
+    font-size: 12px;
+    @include breakpoint(phablet) {
+      font-size: 25px;
+    }
+  }
 
   .content {
     position: absolute;
     left: 50%;
     top: 50%;
     @include transform(translate(-50%, -50%));
+  }
+
+}
+
+#abilities {
+
+  h2 {
+    margin: 15px;
+    color: $secondaryTextColor;
+  }
+
+  .ability {
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+
+    .text {
+      width: 40%;
+      float: left;
+      text-align: center;
+
+      @include breakpoint(phablet) {
+        width: 20%;
+      }
+    }
+
+    .ability-box {
+      width: 60%;
+      height: 100%;
+      float: left;
+      background-color: lighten($mainColor, 8);
+
+      @include breakpoint(phablet) {
+        width: 80%;
+      }
+
+      .inner-box {
+        min-width: 5px;
+        width: 5px;
+        background-color: darken($mainColor, 20);
+        height: 100%;
+      }
+    }
   }
 
 }

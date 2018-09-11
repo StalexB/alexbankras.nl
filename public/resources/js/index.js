@@ -5,11 +5,12 @@ $(document).ready(function() {
         "voetballen",
         "actief bezig zijn",
         "gamen",
-        "goed eten"
+        "lekker eten"
     ];
 
     const changeInterval = 5000;
     const cursorInterval = 500;
+    const abilityLoadTime = 1500;
     const textDuration = changeInterval/4;
     const $hobbyElem = $('#hobby');
     const $cursor = $('#cursor');
@@ -18,6 +19,10 @@ $(document).ready(function() {
 
     setInterval(changeCursor, cursorInterval);
     setInterval(changeHobby, changeInterval);
+
+    // Call it when the browser loads the page
+    changeHobby();
+    loadAbilities(abilityLoadTime);
 
     function changeHobby() {
         index++;
@@ -55,6 +60,18 @@ $(document).ready(function() {
         } else {
             $cursor.html("_");
         }
+    }
+
+    function loadAbilities(duration) {
+        let count = 0;
+        $(".ability").each(function() {
+            let $ability = $(this);
+            let percentage = Number($ability.find(".ability-box").attr("percentage"));
+
+            $ability.find(".inner-box").animate({ width: percentage + '%' }, duration+(duration/5)*count, 'easeInOutExpo');
+
+            count++;
+        });
     }
 
 });

@@ -1,18 +1,31 @@
 body {
   font-family: Roboto;
-  color: white;
-  background-color: red; }
+  color: black;
+  background-color: #b7fdff; }
 
 body, h1, h2, h3, h4, h5, p, ul, li {
   margin: 0;
   padding: 0; }
 
 #header {
-  height: 35vh;
+  height: 20vh;
   width: 100%;
   position: relative;
   text-align: center;
-  background-color: #cc0000; }
+  background-color: #84fcff; }
+  @media (min-width: 37.5em) {
+    #header {
+      height: 35vh; } }
+  #header h1 {
+    font-size: 20px; }
+    @media (min-width: 37.5em) {
+      #header h1 {
+        font-size: 35px; } }
+  #header h2 {
+    font-size: 12px; }
+    @media (min-width: 37.5em) {
+      #header h2 {
+        font-size: 25px; } }
   #header .content {
     position: absolute;
     left: 50%;
@@ -20,5 +33,33 @@ body, h1, h2, h3, h4, h5, p, ul, li {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+
+#abilities h2 {
+  margin: 15px;
+  color: black; }
+#abilities .ability {
+  width: 100%;
+  padding: 10px;
+  height: 40px; }
+  #abilities .ability .text {
+    width: 40%;
+    float: left;
+    text-align: center; }
+    @media (min-width: 37.5em) {
+      #abilities .ability .text {
+        width: 20%; } }
+  #abilities .ability .ability-box {
+    width: 60%;
+    height: 100%;
+    float: left;
+    background-color: #e0feff; }
+    @media (min-width: 37.5em) {
+      #abilities .ability .ability-box {
+        width: 80%; } }
+    #abilities .ability .ability-box .inner-box {
+      min-width: 5px;
+      width: 5px;
+      background-color: #51faff;
+      height: 100%; }
 
 /*# sourceMappingURL=index.css.map */

@@ -63,4 +63,5 @@ typings/
 # SASS
 *.css.map
 
-.idea
+.idea/
+*.iml
