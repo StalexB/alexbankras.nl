@@ -120,10 +120,12 @@ body, h1, h2, h3, h4, h5, p, ul, li {
       border-radius: 10px;
       border: 2px solid #2d2d78; }
       #studies .study .certificate .name {
-        padding: 15px; }
+        padding: 15px;
+        color: white; }
       #studies .study .certificate .meta {
         text-align: center;
-        padding: 5px; }
+        padding: 5px;
+        color: #d9d9d9; }
     #studies .study .extra.content {
       padding: 10px;
       text-align: right; }
