@@ -18,6 +18,10 @@ body, h1, h2, h3, h4, h5, p, ul, li {
   text-align: center;
   background-color: darken($mainColor, 10);
 
+  #name {
+    text-decoration: underline;
+  }
+
   @include breakpoint(phablet) {
     height: 35vh;
   }
@@ -46,10 +50,11 @@ body, h1, h2, h3, h4, h5, p, ul, li {
 }
 
 #abilities {
+  padding-bottom: 25px;
 
   h2 {
     margin: 15px;
-    color: $secondaryTextColor;
+    color: lighten($secondaryTextColor, 15);
   }
 
   .ability {
@@ -83,6 +88,99 @@ body, h1, h2, h3, h4, h5, p, ul, li {
         background-color: darken($mainColor, 20);
         height: 100%;
       }
+    }
+  }
+
+}
+
+#studies-wrapper {
+  background-color: lighten($mainColor, 10);
+  padding-right: 0 !important;
+
+  .ui.grid.container {
+    margin-right: 0 !important;
+  }
+}
+
+#studies {
+  #certs-header {
+    margin: 10px;
+  }
+  padding-top: 25px;
+
+  @include breakpoint(phablet) {
+    .container {
+      display: flex;
+      flex-flow: wrap;
+    }
+  }
+
+  h2 {
+    margin: 15px;
+    color: lighten($secondaryTextColor, 30);
+  }
+
+  .study {
+    width: 100%;
+    margin: 20px 0;
+    border: 3px solid lighten($mainColor, 20);
+    background-color: darken($mainColor, 10);
+
+    @include breakpoint(phablet) {
+      width: 45%;
+      margin: 10px 2.5%;
+    }
+
+    @include breakpoint(laptop) {
+      width: 30%;
+      margin: 10px 1.5%;
+    }
+
+    .type {
+      text-align: center;
+      background-color: lighten($mainColor, 5);
+      padding: 10px;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .name {
+      color: darken($textColor, 25);
+      text-align: center;
+      padding: 5px;
+    }
+
+    .description {
+      color: darken($textColor, 10);
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    .instance {
+      font-size: 15px;
+      padding: 10px;
+      background-color: darken($mainColor, 5);
+    }
+
+    .certificate {
+      width: 80%;
+      margin: 10px 10%;
+      background-color: $mainColor;
+      border-radius: 10px;
+      border: 2px solid lighten($mainColor, 15);
+
+      .name {
+        padding: 15px;
+      }
+
+      .meta {
+        text-align: center;
+        padding: 5px;
+      }
+    }
+
+    .extra.content {
+      padding: 10px;
+      text-align: right;
     }
   }
 

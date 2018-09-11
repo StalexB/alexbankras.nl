@@ -1,7 +1,7 @@
 body {
   font-family: Roboto;
-  color: black;
-  background-color: #b7fdff; }
+  color: white;
+  background-color: #496163; }
 
 body, h1, h2, h3, h4, h5, p, ul, li {
   margin: 0;
@@ -12,7 +12,9 @@ body, h1, h2, h3, h4, h5, p, ul, li {
   width: 100%;
   position: relative;
   text-align: center;
-  background-color: #84fcff; }
+  background-color: #334446; }
+  #header #name {
+    text-decoration: underline; }
   @media (min-width: 37.5em) {
     #header {
       height: 35vh; } }
@@ -34,32 +36,96 @@ body, h1, h2, h3, h4, h5, p, ul, li {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
 
-#abilities h2 {
-  margin: 15px;
-  color: black; }
-#abilities .ability {
-  width: 100%;
-  padding: 10px;
-  height: 40px; }
-  #abilities .ability .text {
-    width: 40%;
-    float: left;
-    text-align: center; }
+#abilities {
+  padding-bottom: 25px; }
+  #abilities h2 {
+    margin: 15px;
+    color: #a6a6a6; }
+  #abilities .ability {
+    width: 100%;
+    padding: 10px;
+    height: 40px; }
+    #abilities .ability .text {
+      width: 40%;
+      float: left;
+      text-align: center; }
+      @media (min-width: 37.5em) {
+        #abilities .ability .text {
+          width: 20%; } }
+    #abilities .ability .ability-box {
+      width: 60%;
+      height: 100%;
+      float: left;
+      background-color: #5a787a; }
+      @media (min-width: 37.5em) {
+        #abilities .ability .ability-box {
+          width: 80%; } }
+      #abilities .ability .ability-box .inner-box {
+        min-width: 5px;
+        width: 5px;
+        background-color: #1e2728;
+        height: 100%; }
+
+#studies-wrapper {
+  background-color: #5f7e80;
+  padding-right: 0 !important; }
+  #studies-wrapper .ui.grid.container {
+    margin-right: 0 !important; }
+
+#studies {
+  padding-top: 25px; }
+  #studies #certs-header {
+    margin: 10px; }
+  @media (min-width: 37.5em) {
+    #studies .container {
+      display: flex;
+      flex-flow: wrap; } }
+  #studies h2 {
+    margin: 15px;
+    color: #cccccc; }
+  #studies .study {
+    width: 100%;
+    margin: 20px 0;
+    border: 3px solid #77989b;
+    background-color: #334446; }
     @media (min-width: 37.5em) {
-      #abilities .ability .text {
-        width: 20%; } }
-  #abilities .ability .ability-box {
-    width: 60%;
-    height: 100%;
-    float: left;
-    background-color: #e0feff; }
-    @media (min-width: 37.5em) {
-      #abilities .ability .ability-box {
-        width: 80%; } }
-    #abilities .ability .ability-box .inner-box {
-      min-width: 5px;
-      width: 5px;
-      background-color: #51faff;
-      height: 100%; }
+      #studies .study {
+        width: 45%;
+        margin: 10px 2.5%; } }
+    @media (min-width: 64em) {
+      #studies .study {
+        width: 30%;
+        margin: 10px 1.5%; } }
+    #studies .study .type {
+      text-align: center;
+      background-color: #546f72;
+      padding: 10px;
+      border-radius: 5px 5px 0 0; }
+    #studies .study .name {
+      color: #bfbfbf;
+      text-align: center;
+      padding: 5px; }
+    #studies .study .description {
+      color: #e6e6e6;
+      font-size: 14px;
+      padding: 10px; }
+    #studies .study .instance {
+      font-size: 15px;
+      padding: 10px;
+      background-color: #3e5354; }
+    #studies .study .certificate {
+      width: 80%;
+      margin: 10px 10%;
+      background-color: #496163;
+      border-radius: 10px;
+      border: 2px solid #698c8f; }
+      #studies .study .certificate .name {
+        padding: 15px; }
+      #studies .study .certificate .meta {
+        text-align: center;
+        padding: 5px; }
+    #studies .study .extra.content {
+      padding: 10px;
+      text-align: right; }
 
 /*# sourceMappingURL=index.css.map */

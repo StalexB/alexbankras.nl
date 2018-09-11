@@ -10,7 +10,8 @@ html(lang="en")
     body
         #header
             .content
-                h1 Ik ben Alex Bankras
+                h1 Ik ben
+                    span#name  Alex Bankras
                 h2 Ik hou van
                     span#hobby  programmeren
                     span#cursor
@@ -49,6 +50,34 @@ html(lang="en")
                             h3 Python
                         .ability-box(percentage="10")
                             .inner-box
+        .ui.grid#studies-wrappe
+            .ui.grid.container
+                .sixteen.wide.column
+                    #studies
+                        h2 Mijn studies
+                        .container
+                            each study in studies
+                                .study
+                                    .type= study.type
+                                    if study.study
+                                        .name= study.study
+                                    .instance= study.instanceName
+                                    if study.extra
+                                        .description= study.extra
+                                    if study.certificates
+                                        h3#certs-header Diploma's/Certificaten:
+                                        each certificate in study.certificates
+                                            .certificate
+                                                .name= certificate.name
+                                                .meta= certificate.date
+                                                if certificate.extra
+                                                    .meta #{certificate.extra}
+                                    .extra.content
+                                        span= "van " + moment(study.from, "DD-MM-YYYY").format("MMMM YYYY") + " tot " +  moment(study.to, "DD-MM-YYYY").format("MMMM YYYY")
+                                            if moment(study.to, "DD-MM-YYYY").toDate().getTime() - Date.now() > 0
+                                                br
+                                                | Huidige studie
+
 
     include scripts
     script(src="/resources/js/index.js")

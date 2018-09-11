@@ -1,0 +1,35 @@
+[
+  {
+    "instanceName": "Petrus Canisius",
+    "type": "Basisschool",
+    "from": "01-09-2004",
+    "to": "01-07-2012"
+  },
+  {
+    "instanceName": "Tabor College, Werenfridus",
+    "study": "VWO - Atheneum",
+    "extra": "De eerste vier jaren heb ik tweetalig onderwijs gevolgd. Ook heb ik één jaar gymnasium gevolgd.",
+    "type": "Voortgezet onderwijs",
+    "certificates": [
+      {
+        "name": "CAE (Certificate of Advanced English)",
+        "extra": "English Level C1 - Grade B",
+        "date": "18-07-2016"
+      },
+      {
+        "name": "VWO Atheneum",
+        "extra": "Profiel Natuur en Gezondheid / Natuur en Techniek",
+        "date": "11-07-2018"
+      }
+    ],
+    "from": "01-09-2012",
+    "to": "01-07-2018"
+  },
+  {
+    "instanceName": "Hogeschool van Amsterdam",
+    "study": "HBO ICT: Software Engineering",
+    "type": "Hogeschool",
+    "from": "11-09-2018",
+    "to": "01-07-2022"
+  }
+]

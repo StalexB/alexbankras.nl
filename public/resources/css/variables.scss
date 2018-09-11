@@ -1,5 +1,5 @@
-$mainColor: rgb(183, 253, 255);
-$textColor: black;
+$mainColor: rgb(73, 97, 99);
+$textColor: white;
 $secondaryTextColor: darken($textColor, 50);
 
 @mixin breakpoint($point) {

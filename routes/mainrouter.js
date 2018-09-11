@@ -6,10 +6,19 @@ const fs = require("fs");
 
 app.use("/", router);
 
-var hobbies = [];
+var studies = [];
+fs.readFile(process.cwd() + "/config/studies.json", (err, data) => {
+    if(err) {
+        console.error(err);
+        return;
+    }
+
+    studies = JSON.parse(data);
+});
 
 router.get("/", (req, res) => {
     res.render("index", {
+        studies: studies,
         moment: moment
     });
 });
