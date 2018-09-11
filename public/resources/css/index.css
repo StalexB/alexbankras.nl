@@ -1,0 +1,24 @@
+body {
+  font-family: Roboto;
+  color: white;
+  background-color: red; }
+
+body, h1, h2, h3, h4, h5, p, ul, li {
+  margin: 0;
+  padding: 0; }
+
+#header {
+  height: 35vh;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background-color: #cc0000; }
+  #header .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=index.css.map */
