@@ -130,4 +130,61 @@ body, h1, h2, h3, h4, h5, p, ul, li {
       padding: 10px;
       text-align: right; }
 
+#showcase-wrapper {
+  background-color: #181840;
+  padding: 25px 0; }
+  #showcase-wrapper #showcase {
+    overflow: hidden;
+    width: 100%;
+    position: relative; }
+    #showcase-wrapper #showcase .arrow {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      cursor: pointer; }
+    #showcase-wrapper #showcase .arrow.left {
+      left: 25px; }
+    #showcase-wrapper #showcase .arrow.right {
+      right: 25px; }
+    #showcase-wrapper #showcase ul {
+      overflow: hidden;
+      width: 100000%;
+      list-style-type: none; }
+    #showcase-wrapper #showcase li {
+      overflow: hidden;
+      padding: 0;
+      width: 100vw;
+      display: inline-block; }
+    #showcase-wrapper #showcase h2 {
+      margin: 15px;
+      color: #a6a6a6; }
+    #showcase-wrapper #showcase .showcase-item {
+      text-align: center;
+      display: inline-block; }
+      #showcase-wrapper #showcase .showcase-item img {
+        margin: 0 auto;
+        display: block; }
+      #showcase-wrapper #showcase .showcase-item .name {
+        font-size: 20px; }
+      #showcase-wrapper #showcase .showcase-item .description {
+        width: 90%;
+        margin-left: 5%; }
+        @media (min-width: 37.5em) {
+          #showcase-wrapper #showcase .showcase-item .description {
+            width: 60%;
+            margin-left: 20%; } }
+        @media (min-width: 64em) {
+          #showcase-wrapper #showcase .showcase-item .description {
+            width: 40%;
+            margin-left: 30%; } }
+
+#footer {
+  background-color: #0a0a1b; }
+  #footer ul {
+    list-style-type: none; }
+    #footer ul li {
+      display: inline-block; }
+
 /*# sourceMappingURL=index.css.map */

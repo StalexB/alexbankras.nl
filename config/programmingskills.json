@@ -1,0 +1,26 @@
+[
+  {
+    "language": "Java",
+    "acquaintance": 90
+  },
+  {
+    "language": "Javascript",
+    "acquaintance": 90
+  },
+  {
+    "language": "SQL",
+    "acquaintance": 75
+  },
+  {
+    "language": "HTML/CSS",
+    "acquaintance": 95
+  },
+  {
+    "language": "PHP",
+    "acquaintance": 30
+  },
+  {
+    "language": "Python",
+    "acquaintance": 15
+  }
+]

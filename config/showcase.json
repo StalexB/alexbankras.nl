@@ -1,5 +1,25 @@
 [
   {
-
+    "projectName": "Backendprogramming.com",
+    "description": "Backendprogramming.com is een blog van mij. Ik heb de website en back office waar posts aangemaakt worden volledig zelf gemaakt, wat erg leerzaam was om te doen.",
+    "link": "https://www.backendprogramming.com",
+    "image": "https://www.backendprogramming.com/apple-touch-icon.png"
+  },
+  {
+    "projectName": "Stalex.io",
+    "description": "Stalex.io is een website voor een online services bedrijf die ik wellicht met mijn broer Stan van plan ben te gaan beginnen. Alles is compleet zelf gebouwd en ontworpen, zonder bestaande CMS. Ook hebben we veel aandacht geschonken aan SEO.",
+    "link": "https://www.stalex.io",
+    "image": "https://www.stalex.io/apple-touch-icon.png"
+  },
+  {
+    "projectName": "Weerenfridus",
+    "description": "Voor mijn profielwerkstuk in VWO 6 heb ik samen met twee anderen een weerstation gebouwd met een Raspberry Pi met sensoren. De resultaten werden hiervan live weergegeven op een website die we erbij hebben gebouwd.",
+    "image": "https://i.imgur.com/JRNvUYb.png"
+  },
+  {
+    "projectName": "Spigot plugins",
+    "description": "Vroeger speelde ik veel Minecraft. Ik wilde graag zelf dingen toevoegen aan de game, dus besloot ik uit te zoeken hoe dat moest. Ik kwam bij Java terecht en zo ben ik begonnen met programmeren van Spigot (een minecraft server) plugins.",
+    "link": "https://www.spigotmc.org/members/debugged.62963/",
+    "image": "https://static.spigotmc.org/img/spigot-og.png"
   }
 ]

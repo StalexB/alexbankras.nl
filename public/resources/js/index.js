@@ -14,8 +14,10 @@ $(document).ready(function() {
     const textDuration = changeInterval/4;
     const $hobbyElem = $('#hobby');
     const $cursor = $('#cursor');
+    const $showcaseContainer = $('#showcase .slides');
 
     let index = 0;
+    let showcaseIndex = 0;
 
     setInterval(changeCursor, cursorInterval);
     setInterval(changeHobby, changeInterval);
@@ -23,6 +25,7 @@ $(document).ready(function() {
     // Call it when the browser loads the page
     changeHobby();
     loadAbilities(abilityLoadTime);
+    initShowcase();
 
     function changeHobby() {
         index++;
@@ -72,6 +75,29 @@ $(document).ready(function() {
 
             count++;
         });
+    }
+
+    function initShowcase() {
+        $('#showcase .arrow.right').click(function() {
+            showcaseIndex++;
+            if(showcaseIndex >= $showcaseContainer.find("li").length) {
+                showcaseIndex = 0;
+            }
+
+            moveShowcase();
+        });
+        $('#showcase .arrow.left').click(function() {
+            showcaseIndex--;
+            if(showcaseIndex <= -1) {
+                showcaseIndex = $showcaseContainer.find("li").length-1;
+            }
+
+            moveShowcase();
+        });
+    }
+
+    function moveShowcase() {
+        $showcaseContainer.find("li").eq(0).stop().animate({ marginLeft: (-showcaseIndex*100)+"vw" }, 1500, 'easeInOutExpo');
     }
 
 });

@@ -7,7 +7,7 @@ html(lang="en")
         meta(name="description", content="Ik ben Alex Bankras en dit is mijn portfolio website. Neem eens een kijkje :)")
         title Alex Bankras
         include styles
-        link(rel="stylesheet" href="/resources/css/index.css")
+        link(rel="stylesheet", href="/resources/css/index.css")
     body
         #header
             .content
@@ -16,41 +16,16 @@ html(lang="en")
                 h2 Ik hou van
                     span#hobby  programmeren
                     span#cursor
-                    | .
         .ui.grid.container
             .sixteen.wide.column
                 #abilities
                     h2 Mijn programmeer kennis
-                    .ability
-                        .text
-                            h3 Java
-                        .ability-box(percentage="90")
-                            .inner-box
-                    .ability
-                        .text
-                            h3 Javascript
-                        .ability-box(percentage="90")
-                            .inner-box
-                    .ability
-                        .text
-                            h3 SQL
-                        .ability-box(percentage="75")
-                            .inner-box
-                    .ability
-                        .text
-                            h3 HTML/CSS
-                        .ability-box(percentage="95")
-                            .inner-box
-                    .ability
-                        .text
-                            h3 PHP
-                        .ability-box(percentage="25")
-                            .inner-box
-                    .ability
-                        .text
-                            h3 Python
-                        .ability-box(percentage="10")
-                            .inner-box
+                    each skill in programmingSkills
+                        .ability
+                            .text
+                                h3= skill.language
+                            .ability-box(percentage=skill.acquaintance)
+                                .inner-box
         .ui.grid#studies-wrapper
             .ui.grid.container
                 .sixteen.wide.column
@@ -78,7 +53,36 @@ html(lang="en")
                                             if moment(study.to, "DD-MM-YYYY").toDate().getTime() - Date.now() > 0
                                                 br
                                                 | Huidige studie
+        .ui.grid#showcase-wrapper
+            #showcase
+                i.arrow.right.large.icon
+                i.arrow.left.large.icon
+                .ui.grid.container
+                    h2 Mijn projecten
+                ul.slides
+                    each showcaseItem in showcaseItems
+                        li.showcase-item.slide-item
+                            if showcaseItem.image
+                                img(src=showcaseItem.image)
+                            if showcaseItem.link
+                                a(href=showcaseItem.link, target="_blank").name= showcaseItem.projectName
+                            else
+                                .name= showcaseItem.projectName
+                            .description= showcaseItem.description
+        .ui.grid#footer
+            .sixteen.wide.column.center.aligned
+                ul
+                    li
+                        a(href="https://github.com/StalexB/")
+                            i.github.icon
+                    li
+                        a(href="https://twitter.com/Debugged_")
+                            i.twitter.icon
+                    li
+                        a(href="https://www.facebook.com/profile.php?id=100009608581553&ref=bookmarks")
+                            i.facebook.icon
+                br
+                | &copy Alex Bankras - 2018 - Alle rechten voorbehouden
 
-
-    include scripts
-    script(src="/resources/js/index.js")
+        include scripts
+        script(src="/resources/js/index.js")
